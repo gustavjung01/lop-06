@@ -1,0 +1,62 @@
+{
+  "name": "hoctap-lop-06",
+  "private": true,
+  "version": "1.0.2",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:vercel": "tsc && vite build --base=/",
+    "build:github-pages": "tsc && vite build --base=/hoctap-lop-06/",
+    "preview": "vite preview",
+    "electron:dev": "npm run build && electron .",
+    "electron:build": "electron-builder --win nsis",
+    "desktop:build": "npm run build && npm run electron:build"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "electron-updater": "^6.8.9",
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "electron": "^41.7.1",
+    "electron-builder": "^26.15.2",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^5.6.2",
+    "vite": "^6.0.5"
+  },
+  "build": {
+    "appId": "com.hochungkhoi.lop06",
+    "productName": "Hoc Hung Khoi Lop 06",
+    "artifactName": "HocHungKhoi_Lop06-Win-${version}.${ext}",
+    "files": [
+      "dist/**",
+      "node_modules/**",
+      "package.json",
+      "electron/**"
+    ],
+    "win": {
+      "target": ["nsis"]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true
+    },
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "https://pub-53f18eb6ccaf40f5a7c141e65e97dfb3.r2.dev/app-updates/app-lop-06"
+      }
+    ]
+  }
+}

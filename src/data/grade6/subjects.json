@@ -1,0 +1,292 @@
+[
+  {
+    "id": "tieng-anh",
+    "name": "Tiếng Anh",
+    "grade": 6,
+    "annualPeriods": 105,
+    "weeklyPeriodsApprox": 3,
+    "priority": 1,
+    "status": "planned_high_priority",
+    "appFit": "very_high",
+    "learningGoal": "Luyện từ vựng, ngữ pháp cơ bản, nghe, đọc và giao tiếp tiếng Anh ngắn.",
+    "recommendedFeatures": [
+      "flashcards",
+      "audio",
+      "quiz",
+      "spaced_repetition",
+      "gamification"
+    ],
+    "commonExerciseTypes": [
+      "điền từ",
+      "nghe chọn đáp án",
+      "ghép từ với hình",
+      "hỏi đáp",
+      "viết đoạn ngắn"
+    ],
+    "commonMistakes": [
+      "phát âm sai",
+      "nhầm thì",
+      "quên đại từ chủ ngữ",
+      "sai chủ-vị-động từ",
+      "thiếu mạo từ"
+    ]
+  },
+  {
+    "id": "toan",
+    "name": "Toán",
+    "grade": 6,
+    "annualPeriods": 140,
+    "weeklyPeriodsApprox": 4,
+    "priority": 2,
+    "status": "ready_first_seed",
+    "appFit": "high",
+    "learningGoal": "Rèn tư duy logic, tính chính xác, thao tác số học, hình học trực quan và giải quyết vấn đề.",
+    "recommendedFeatures": [
+      "lesson_cards",
+      "practice",
+      "immediate_feedback",
+      "difficulty_levels",
+      "spaced_repetition"
+    ],
+    "commonExerciseTypes": [
+      "tính toán",
+      "liệt kê ước/bội",
+      "dấu hiệu chia hết",
+      "hình học trực quan",
+      "biểu đồ"
+    ],
+    "commonMistakes": [
+      "sai phép tính",
+      "quên thứ tự thực hiện phép tính",
+      "bỏ sót ước/bội",
+      "nhầm công thức chu vi/diện tích"
+    ],
+    "chapters": [
+      {
+        "id": "so-tu-nhien",
+        "title": "Số tự nhiên",
+        "core": [
+          "tập hợp số tự nhiên",
+          "phép tính",
+          "lũy thừa",
+          "số nguyên tố",
+          "ước và bội",
+          "chia hết"
+        ]
+      },
+      {
+        "id": "so-nguyen",
+        "title": "Số nguyên",
+        "core": [
+          "số nguyên âm",
+          "tập hợp Z",
+          "phép tính với số nguyên"
+        ]
+      },
+      {
+        "id": "hinh-hoc-truc-quan",
+        "title": "Hình học trực quan",
+        "core": [
+          "hình phẳng",
+          "chu vi",
+          "diện tích",
+          "nhận diện hình"
+        ]
+      },
+      {
+        "id": "thong-ke",
+        "title": "Thống kê cơ bản",
+        "core": [
+          "thu thập dữ liệu",
+          "bảng",
+          "biểu đồ tranh",
+          "biểu đồ cột"
+        ]
+      },
+      {
+        "id": "on-tap-cuoi-nam",
+        "title": "Ôn tập cuối năm",
+        "core": [
+          "tổng hợp",
+          "vận dụng",
+          "bài toán nhiều bước"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "khtn",
+    "name": "Khoa học tự nhiên",
+    "grade": 6,
+    "annualPeriods": 140,
+    "weeklyPeriodsApprox": 4,
+    "priority": 3,
+    "status": "planned",
+    "appFit": "high",
+    "learningGoal": "Hình thành năng lực nhận thức, tìm hiểu và vận dụng kiến thức khoa học tự nhiên.",
+    "recommendedFeatures": [
+      "visual_cards",
+      "simulation_notes",
+      "quiz",
+      "video_notes",
+      "immediate_feedback"
+    ],
+    "commonExerciseTypes": [
+      "mô tả hiện tượng",
+      "quan sát",
+      "giải thích",
+      "vẽ sơ đồ",
+      "nhận diện quá trình"
+    ],
+    "commonMistakes": [
+      "nhầm khái niệm",
+      "vẽ sai sơ đồ/tia sáng",
+      "nhầm trạng thái vật chất",
+      "lẫn chức năng bộ phận"
+    ]
+  },
+  {
+    "id": "tin-hoc",
+    "name": "Tin học",
+    "grade": 6,
+    "annualPeriods": 35,
+    "weeklyPeriodsApprox": 1,
+    "priority": 4,
+    "status": "planned",
+    "appFit": "high",
+    "learningGoal": "Làm quen máy tính, thiết bị số, thao tác văn bản, trình chiếu và bảng tính cơ bản.",
+    "recommendedFeatures": [
+      "step_by_step",
+      "practice_tasks",
+      "screen_guides",
+      "checklist"
+    ],
+    "commonExerciseTypes": [
+      "nhận diện thiết bị",
+      "thao tác văn bản",
+      "thiết kế slide",
+      "tính toán bảng đơn giản"
+    ],
+    "commonMistakes": [
+      "nhầm chức năng thiết bị",
+      "thao tác sai menu",
+      "dùng hàm sai",
+      "sai địa chỉ ô"
+    ]
+  },
+  {
+    "id": "ngu-van",
+    "name": "Ngữ văn",
+    "grade": 6,
+    "annualPeriods": 140,
+    "weeklyPeriodsApprox": 4,
+    "priority": 5,
+    "status": "later",
+    "appFit": "medium",
+    "learningGoal": "Phát triển năng lực ngôn ngữ, đọc hiểu, diễn đạt, cảm thụ văn học và viết đoạn/bài.",
+    "recommendedFeatures": [
+      "reading_cards",
+      "short_answer",
+      "writing_prompt",
+      "sample_answer"
+    ],
+    "commonExerciseTypes": [
+      "đọc hiểu",
+      "phân tích ngữ liệu",
+      "viết đoạn văn",
+      "chính tả/diễn đạt"
+    ],
+    "commonMistakes": [
+      "hiểu sai ý văn bản",
+      "diễn đạt yếu",
+      "sai chính tả",
+      "trả lời chung chung"
+    ]
+  },
+  {
+    "id": "lich-su-dia-ly",
+    "name": "Lịch sử & Địa lý",
+    "grade": 6,
+    "annualPeriods": 105,
+    "weeklyPeriodsApprox": 3,
+    "priority": 6,
+    "status": "later",
+    "appFit": "medium",
+    "learningGoal": "Ghi nhớ sự kiện, hiểu nguyên nhân-kết quả, đọc bản đồ và phân tích hiện tượng địa lý.",
+    "recommendedFeatures": [
+      "timeline",
+      "map_quiz",
+      "memory_cards",
+      "image_based_questions"
+    ],
+    "commonExerciseTypes": [
+      "hoàn thành bảng",
+      "trắc nghiệm sự kiện",
+      "đọc bản đồ",
+      "phân tích sơ đồ"
+    ],
+    "commonMistakes": [
+      "nhầm năm tháng",
+      "sai tên nhân vật",
+      "sai định hướng",
+      "nhận xét quá tổng quát"
+    ]
+  },
+  {
+    "id": "gdcd",
+    "name": "Giáo dục công dân",
+    "grade": 6,
+    "annualPeriods": 35,
+    "weeklyPeriodsApprox": 1,
+    "priority": 7,
+    "status": "later",
+    "appFit": "medium",
+    "learningGoal": "Hiểu chuẩn mực đạo đức, pháp luật cơ bản, trách nhiệm với bản thân, gia đình và xã hội.",
+    "recommendedFeatures": [
+      "scenario_quiz",
+      "reflection_cards",
+      "choice_consequence"
+    ],
+    "commonExerciseTypes": [
+      "bài tập tình huống",
+      "phân tích hành vi",
+      "chọn cách ứng xử",
+      "liên hệ thực tế"
+    ],
+    "commonMistakes": [
+      "nói chung chung",
+      "đánh giá phiến diện",
+      "thiếu liên hệ thực tế",
+      "suy diễn áp đặt"
+    ]
+  },
+  {
+    "id": "cong-nghe",
+    "name": "Công nghệ",
+    "grade": 6,
+    "annualPeriods": 35,
+    "weeklyPeriodsApprox": 1,
+    "priority": 8,
+    "status": "later",
+    "appFit": "low_to_medium",
+    "learningGoal": "Hiểu an toàn sinh hoạt, vật liệu, dụng cụ, quy trình thiết kế sản phẩm đơn giản.",
+    "recommendedFeatures": [
+      "video_notes",
+      "safety_cards",
+      "process_checklist",
+      "project_template"
+    ],
+    "commonExerciseTypes": [
+      "tình huống an toàn",
+      "nhận diện vật liệu",
+      "quy trình thiết kế",
+      "dự án nhỏ"
+    ],
+    "commonMistakes": [
+      "thiếu bước an toàn",
+      "đo sai",
+      "dùng dụng cụ sai",
+      "bỏ qua bước kiểm tra"
+    ]
+  }
+]

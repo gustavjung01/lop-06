@@ -1,0 +1,9 @@
+export type LichSuDiaLiDifficulty = 'easy' | 'medium' | 'hard';
+export type LichSuDiaLiSubjectPart = 'lich_su' | 'dia_li';
+export type LichSuDiaLiLesson = { id: number; sourceId: string; grade: 6; subjectCode: 'lich-su-dia-li'; subjectPart: LichSuDiaLiSubjectPart; unitCode: string; unitTitle: string; lessonCode: string; slug: string; title: string; objectives: string[]; keyPoints: string[]; keywords: Record<string,string>; examples: string[]; commonMistakes: string[]; timeline: string[]; mapSkills: string[]; summarySimple: string; difficulty: LichSuDiaLiDifficulty; estimatedMinutes: number; status: 'draft' | 'ready' | 'archived'; sortOrder: number; isActive: 0 | 1; };
+export type LichSuDiaLiLessonCard = { id: number; sourceId: string; lessonId: number; cardType: string; title: string; content: string; sortOrder: number; isActive: 0 | 1; };
+export type LichSuDiaLiQuestionType = 'single_choice' | 'true_false' | 'short_answer' | 'scenario_choice';
+export type LichSuDiaLiQuestionOption = { key: string; text: string; };
+export type LichSuDiaLiQuestion = { id: number; sourceId: string; lessonId: number; questionType: LichSuDiaLiQuestionType; questionText: string; options: LichSuDiaLiQuestionOption[] | null; correctAnswer: string; answerText: string; explanationSimple: string; difficulty: LichSuDiaLiDifficulty; skillTag: string; tags: string[]; isActive: 0 | 1; };
+export type LichSuDiaLiPracticeQuestionCountOption = 10 | 12 | 20 | 40;
+export type LichSuDiaLiPracticeQuestionCountChoice = { value: LichSuDiaLiPracticeQuestionCountOption; title: string; label: string; description: string; };

@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/lesson-content.schema.json",
+  "title": "Grade 6 Lesson Content",
+  "type": "object",
+  "required": [
+    "id",
+    "grade",
+    "subjectId",
+    "chapterId",
+    "lesson",
+    "cards",
+    "questions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "grade": {
+      "type": "integer",
+      "const": 6
+    },
+    "subjectId": {
+      "type": "string"
+    },
+    "chapterId": {
+      "type": "string"
+    },
+    "sourceVersion": {
+      "type": "string"
+    },
+    "lesson": {
+      "type": "object",
+      "required": [
+        "title",
+        "description",
+        "estimatedMinutes"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "estimatedMinutes": {
+          "type": "integer",
+          "minimum": 5,
+          "maximum": 30
+        },
+        "learningObjectives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "cards": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "content",
+          "order"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "theory",
+              "example",
+              "quick_check",
+              "tip",
+              "summary"
+            ]
+          },
+          "content": {
+            "type": "string"
+          },
+          "mediaUrl": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "order": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "questions": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "question",
+          "choices",
+          "answer",
+          "explanation",
+          "difficulty"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "choices": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string"
+            }
+          },
+          "answer": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "difficulty": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 3
+          },
+          "bloom": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

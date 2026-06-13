@@ -1,0 +1,345 @@
+{
+  "generatedAt": "2026-05-25T06:47:49.017Z",
+  "manifestPath": "docs/audio/english-audio-catalog-phase2b.json",
+  "outputDir": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1",
+  "baseR2Path": "audio/tts/assets/en-v1",
+  "bucket": "hoc-tap-lop-06",
+  "endpoint": "https://ce1e1df310b411007ce9aed509dd2d4d.r2.cloudflarestorage.com",
+  "dryRun": false,
+  "resume": true,
+  "offset": 450,
+  "limit": 50,
+  "totalItems": 490,
+  "selectedItems": 40,
+  "credentialReady": true,
+  "missingCredentialFields": [],
+  "docsKeysExists": true,
+  "planned": 0,
+  "uploaded": 40,
+  "skippedExisting": 0,
+  "skippedMissingLocal": 0,
+  "failed": 0,
+  "items": [
+    {
+      "key": "63",
+      "remoteStatus": "uploaded",
+      "localFileName": "peach-blossom-c8aa2f02.mp3",
+      "localFileSizeBytes": 10368,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "64",
+      "remoteStatus": "uploaded",
+      "localFileName": "apricot-blossom-57a2b4e1.mp3",
+      "localFileSizeBytes": 13056,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "65",
+      "remoteStatus": "uploaded",
+      "localFileName": "family-gathering-93a998d7.mp3",
+      "localFileSizeBytes": 10944,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "66",
+      "remoteStatus": "uploaded",
+      "localFileName": "decorate-6ce6c085.mp3",
+      "localFileSizeBytes": 8064,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "67",
+      "remoteStatus": "uploaded",
+      "localFileName": "wish-3fec4499.mp3",
+      "localFileSizeBytes": 6528,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "68",
+      "remoteStatus": "uploaded",
+      "localFileName": "special-food-e2cafd2b.mp3",
+      "localFileSizeBytes": 10176,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "69",
+      "remoteStatus": "uploaded",
+      "localFileName": "clean-the-house-8313bdb8.mp3",
+      "localFileSizeBytes": 10368,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "7",
+      "remoteStatus": "uploaded",
+      "localFileName": "pencil-case-f498b399.mp3",
+      "localFileSizeBytes": 10176,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "70",
+      "remoteStatus": "uploaded",
+      "localFileName": "relative-c95f71ea.mp3",
+      "localFileSizeBytes": 7296,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "71",
+      "remoteStatus": "uploaded",
+      "localFileName": "tradition-6918d7fe.mp3",
+      "localFileSizeBytes": 8064,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "72",
+      "remoteStatus": "uploaded",
+      "localFileName": "cartoon-c0a3cf48.mp3",
+      "localFileSizeBytes": 7872,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "73",
+      "remoteStatus": "uploaded",
+      "localFileName": "news-2285e6f5.mp3",
+      "localFileSizeBytes": 7104,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "74",
+      "remoteStatus": "uploaded",
+      "localFileName": "game-show-7777ee01.mp3",
+      "localFileSizeBytes": 8256,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "75",
+      "remoteStatus": "uploaded",
+      "localFileName": "viewer-f46597d0.mp3",
+      "localFileSizeBytes": 6720,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "76",
+      "remoteStatus": "uploaded",
+      "localFileName": "channel-0632e68d.mp3",
+      "localFileSizeBytes": 6720,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "77",
+      "remoteStatus": "uploaded",
+      "localFileName": "programme-0fc30520.mp3",
+      "localFileSizeBytes": 7680,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "78",
+      "remoteStatus": "uploaded",
+      "localFileName": "documentary-8470ae9b.mp3",
+      "localFileSizeBytes": 9792,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "79",
+      "remoteStatus": "uploaded",
+      "localFileName": "remote-control-f44b0395.mp3",
+      "localFileSizeBytes": 10944,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "8",
+      "remoteStatus": "uploaded",
+      "localFileName": "calculator-12e263f2.mp3",
+      "localFileSizeBytes": 9408,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "80",
+      "remoteStatus": "uploaded",
+      "localFileName": "comedian-bb4f74ba.mp3",
+      "localFileSizeBytes": 8256,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "81",
+      "remoteStatus": "uploaded",
+      "localFileName": "educational-ec03123d.mp3",
+      "localFileSizeBytes": 9600,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "82",
+      "remoteStatus": "uploaded",
+      "localFileName": "entertaining-17af78d0.mp3",
+      "localFileSizeBytes": 9024,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "83",
+      "remoteStatus": "uploaded",
+      "localFileName": "schedule-8224bbdf.mp3",
+      "localFileSizeBytes": 8064,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "84",
+      "remoteStatus": "uploaded",
+      "localFileName": "football-d570be6b.mp3",
+      "localFileSizeBytes": 7104,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "85",
+      "remoteStatus": "uploaded",
+      "localFileName": "volleyball-36e4a8e2.mp3",
+      "localFileSizeBytes": 8064,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "86",
+      "remoteStatus": "uploaded",
+      "localFileName": "badminton-94ea616c.mp3",
+      "localFileSizeBytes": 7872,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "87",
+      "remoteStatus": "uploaded",
+      "localFileName": "chess-26796ff2.mp3",
+      "localFileSizeBytes": 7296,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "88",
+      "remoteStatus": "uploaded",
+      "localFileName": "competition-c29b12e5.mp3",
+      "localFileSizeBytes": 9408,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "89",
+      "remoteStatus": "uploaded",
+      "localFileName": "match-df3bf78b.mp3",
+      "localFileSizeBytes": 7104,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "9",
+      "remoteStatus": "uploaded",
+      "localFileName": "boarding-school-5336c156.mp3",
+      "localFileSizeBytes": 9216,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "90",
+      "remoteStatus": "uploaded",
+      "localFileName": "player-48fd83f3.mp3",
+      "localFileSizeBytes": 6720,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "91",
+      "remoteStatus": "uploaded",
+      "localFileName": "team-05c66a1b.mp3",
+      "localFileSizeBytes": 6144,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "92",
+      "remoteStatus": "uploaded",
+      "localFileName": "racket-10266c20.mp3",
+      "localFileSizeBytes": 7104,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "93",
+      "remoteStatus": "uploaded",
+      "localFileName": "score-3ec96820.mp3",
+      "localFileSizeBytes": 6912,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "94",
+      "remoteStatus": "uploaded",
+      "localFileName": "win-fb823e1c.mp3",
+      "localFileSizeBytes": 6144,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "95",
+      "remoteStatus": "uploaded",
+      "localFileName": "lose-f9699d2b.mp3",
+      "localFileSizeBytes": 6912,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "96",
+      "remoteStatus": "uploaded",
+      "localFileName": "city-7c399c2d.mp3",
+      "localFileSizeBytes": 6528,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "97",
+      "remoteStatus": "uploaded",
+      "localFileName": "capital-151e55fa.mp3",
+      "localFileSizeBytes": 7296,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "98",
+      "remoteStatus": "uploaded",
+      "localFileName": "landmark-3deff596.mp3",
+      "localFileSizeBytes": 8256,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "99",
+      "remoteStatus": "uploaded",
+      "localFileName": "palace-55e8005e.mp3",
+      "localFileSizeBytes": 7680,
+      "error": "",
+      "result": "uploaded"
+    }
+  ],
+  "status": "completed"
+}

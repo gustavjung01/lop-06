@@ -1,0 +1,119 @@
+{
+  "generatedAt": "2026-05-25T16:18:57.037Z",
+  "profileId": "vi-v1",
+  "voice": "vi-VN-Chirp3-HD-Despina",
+  "catalogPath": "F:\\1_A_Disk_D\\Tool\\hoc-tap-cap-02\\lop-06\\docs\\audio\\english-audio-vi-phase3a-catalog.json",
+  "pilotManifestPath": "F:\\1_A_Disk_D\\Tool\\hoc-tap-cap-02\\lop-06\\docs\\audio\\english-audio-vi-phase3c-pilot-manifest.json",
+  "manifestPath": "F:\\1_A_Disk_D\\Tool\\hoc-tap-cap-02\\lop-06\\docs\\audio\\english-audio-vi-phase3d-gloss-full-manifest.json",
+  "uploadReportPath": "docs/audio/english-audio-vi-phase3d-gloss-full-report.json",
+  "localNewOutputDir": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\vi-v1\\vietnamese-gloss",
+  "baseR2Path": "audio/tts/assets/vi-v1/vietnamese-gloss",
+  "rawGloss": 142,
+  "uniqueGloss": 142,
+  "alreadyExisted": 50,
+  "generatedNew": 92,
+  "uploadedNew": 92,
+  "skippedExisting": 50,
+  "failed": 0,
+  "zeroSize": 0,
+  "manifestCounts": {
+    "vietnamese-gloss": 142
+  },
+  "manifestTotalItems": 142,
+  "publicBaseUrl": "https://audio.hochungkhoi.site",
+  "sampleUrls": [
+    {
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:boarding-school",
+      "url": "https://audio.hochungkhoi.site/audio/tts/assets/vi-v1/vietnamese-gloss/vietnamese-gloss-0838a3afa5.mp3",
+      "sourceType": "vietnamese-gloss"
+    },
+    {
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:calculator",
+      "url": "https://audio.hochungkhoi.site/audio/tts/assets/vi-v1/vietnamese-gloss/vietnamese-gloss-70479fd17d.mp3",
+      "sourceType": "vietnamese-gloss"
+    },
+    {
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:classmate",
+      "url": "https://audio.hochungkhoi.site/audio/tts/assets/vi-v1/vietnamese-gloss/vietnamese-gloss-d26be336fc.mp3",
+      "sourceType": "vietnamese-gloss"
+    },
+    {
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:homework",
+      "url": "https://audio.hochungkhoi.site/audio/tts/assets/vi-v1/vietnamese-gloss/vietnamese-gloss-37746570eb.mp3",
+      "sourceType": "vietnamese-gloss"
+    },
+    {
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:international-school",
+      "url": "https://audio.hochungkhoi.site/audio/tts/assets/vi-v1/vietnamese-gloss/vietnamese-gloss-02199f4f71.mp3",
+      "sourceType": "vietnamese-gloss"
+    }
+  ],
+  "sampleTexts": [
+    {
+      "index": 1,
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:boarding-school",
+      "text": "trường nội trú",
+      "status": "pilot-existing"
+    },
+    {
+      "index": 2,
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:calculator",
+      "text": "máy tính bỏ túi",
+      "status": "pilot-existing"
+    },
+    {
+      "index": 3,
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:classmate",
+      "text": "bạn cùng lớp",
+      "status": "pilot-existing"
+    },
+    {
+      "index": 4,
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:homework",
+      "text": "bài tập về nhà",
+      "status": "pilot-existing"
+    },
+    {
+      "index": 5,
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:international-school",
+      "text": "trường quốc tế",
+      "status": "pilot-existing"
+    },
+    {
+      "index": 6,
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:lesson",
+      "text": "bài học",
+      "status": "pilot-existing"
+    },
+    {
+      "index": 7,
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:library",
+      "text": "thư viện",
+      "status": "pilot-existing"
+    },
+    {
+      "index": 8,
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:pencil-case",
+      "text": "hộp bút",
+      "status": "pilot-existing"
+    },
+    {
+      "index": 9,
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:playground",
+      "text": "sân chơi",
+      "status": "pilot-existing"
+    },
+    {
+      "index": 10,
+      "sourceId": "eng6-b2-u01-vocabulary-my-new-school:vocab:science",
+      "text": "khoa học",
+      "status": "pilot-existing"
+    }
+  ],
+  "notes": [
+    "No mp3 was committed.",
+    "No checkpoint was committed.",
+    "No key or env file was committed.",
+    "Vietnamese gloss only."
+  ]
+}

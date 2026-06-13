@@ -1,0 +1,425 @@
+{
+  "generatedAt": "2026-05-25T14:40:07.662Z",
+  "manifestPath": "docs/audio/english-audio-vi-phase3c-pilot-manifest.json",
+  "outputDir": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\vi-v1-phase3b-pilot",
+  "baseR2Path": "audio/tts/assets/vi-v1/vietnamese-gloss",
+  "bucket": "hoc-tap-lop-06",
+  "endpoint": "https://ce1e1df310b411007ce9aed509dd2d4d.r2.cloudflarestorage.com",
+  "dryRun": false,
+  "resume": true,
+  "offset": 0,
+  "limit": 50,
+  "totalItems": 50,
+  "selectedItems": 50,
+  "credentialReady": true,
+  "missingCredentialFields": [],
+  "docsKeysExists": true,
+  "planned": 0,
+  "uploaded": 50,
+  "skippedExisting": 0,
+  "skippedMissingLocal": 0,
+  "failed": 0,
+  "items": [
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:boarding-school",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-0838a3afa5.mp3",
+      "localFileSizeBytes": 5952,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:calculator",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-70479fd17d.mp3",
+      "localFileSizeBytes": 6336,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:classmate",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-d26be336fc.mp3",
+      "localFileSizeBytes": 4992,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:homework",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-37746570eb.mp3",
+      "localFileSizeBytes": 4704,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:international-school",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-02199f4f71.mp3",
+      "localFileSizeBytes": 4992,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:lesson",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-2014d937e5.mp3",
+      "localFileSizeBytes": 5184,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:library",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-19b97180d2.mp3",
+      "localFileSizeBytes": 5664,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:pencil-case",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-942ba1f5e8.mp3",
+      "localFileSizeBytes": 4992,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:playground",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-ecb274f439.mp3",
+      "localFileSizeBytes": 5184,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:science",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-c8abd32fb6.mp3",
+      "localFileSizeBytes": 4224,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:subject",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-ed8847b7cb.mp3",
+      "localFileSizeBytes": 2784,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u01-vocabulary-my-new-school:vocab:uniform",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-b81eece031.mp3",
+      "localFileSizeBytes": 4224,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:attic",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-178643bcae.mp3",
+      "localFileSizeBytes": 5472,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:bathroom",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-5a59fcef35.mp3",
+      "localFileSizeBytes": 5856,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:bedroom",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-b255348546.mp3",
+      "localFileSizeBytes": 5376,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:between",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-a18eca0595.mp3",
+      "localFileSizeBytes": 5472,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:cupboard",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-b341e73109.mp3",
+      "localFileSizeBytes": 5184,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:dishwasher",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-da3bc3b93c.mp3",
+      "localFileSizeBytes": 4896,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:fridge",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-43231bca4e.mp3",
+      "localFileSizeBytes": 5184,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:kitchen",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-3c1bae9773.mp3",
+      "localFileSizeBytes": 4224,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:lamp",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-5b4a6c4e7f.mp3",
+      "localFileSizeBytes": 4896,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:living-room",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-424a3d9b28.mp3",
+      "localFileSizeBytes": 4896,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:sofa",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-e2767cee5d.mp3",
+      "localFileSizeBytes": 5184,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u02-vocabulary-my-house:vocab:wardrobe",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-f1ae6a4865.mp3",
+      "localFileSizeBytes": 5184,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:clever",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-fab354d923.mp3",
+      "localFileSizeBytes": 4512,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:confident",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-1120558405.mp3",
+      "localFileSizeBytes": 2784,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:creative",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-202dc47c40.mp3",
+      "localFileSizeBytes": 4224,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:curly-hair",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-493fc86123.mp3",
+      "localFileSizeBytes": 5856,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:friendly",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-cf6ad74236.mp3",
+      "localFileSizeBytes": 4896,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:funny",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-93cd66a0f8.mp3",
+      "localFileSizeBytes": 4896,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:hard-working",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-2deaaa0391.mp3",
+      "localFileSizeBytes": 5664,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:kind",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-6da2cc3ae0.mp3",
+      "localFileSizeBytes": 4224,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:shy",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-524cb5ebec.mp3",
+      "localFileSizeBytes": 5376,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:slim",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-c4a2469b41.mp3",
+      "localFileSizeBytes": 4896,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:sporty",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-b948555031.mp3",
+      "localFileSizeBytes": 5664,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u03-vocabulary-my-friends:vocab:straight-hair",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-b8bd641958.mp3",
+      "localFileSizeBytes": 4416,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:go-straight",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-93d7295b4f.mp3",
+      "localFileSizeBytes": 5856,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:market",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-45e242b49a.mp3",
+      "localFileSizeBytes": 3264,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:modern",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-f46a61da89.mp3",
+      "localFileSizeBytes": 4224,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:museum",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-065bd24307.mp3",
+      "localFileSizeBytes": 4704,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:narrow",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-4d2019140c.mp3",
+      "localFileSizeBytes": 3072,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:neighbourhood",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-eff002d0cc.mp3",
+      "localFileSizeBytes": 5376,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:noisy",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-9e260bd92a.mp3",
+      "localFileSizeBytes": 4704,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:peaceful",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-d56730880c.mp3",
+      "localFileSizeBytes": 5376,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:post-office",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-f4bfb08077.mp3",
+      "localFileSizeBytes": 3552,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:railway-station",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-d30f4ccc44.mp3",
+      "localFileSizeBytes": 5472,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:square",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-fbd0d780bf.mp3",
+      "localFileSizeBytes": 4224,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u04-vocabulary-my-neighbourhood:vocab:turn-left",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-c6efc5ed1a.mp3",
+      "localFileSizeBytes": 6144,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u05-vocabulary-natural-wonders-of-viet-nam:vocab:beach",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-dc9378c24e.mp3",
+      "localFileSizeBytes": 4896,
+      "error": "",
+      "result": "uploaded"
+    },
+    {
+      "key": "vietnamese-gloss:eng6-b2-u05-vocabulary-natural-wonders-of-viet-nam:vocab:tourist",
+      "remoteStatus": "uploaded",
+      "localFileName": "vietnamese-gloss-db8893440d.mp3",
+      "localFileSizeBytes": 7776,
+      "error": "",
+      "result": "uploaded"
+    }
+  ],
+  "status": "completed"
+}

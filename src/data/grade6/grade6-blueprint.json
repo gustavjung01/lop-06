@@ -1,0 +1,262 @@
+{
+  "grade": 6,
+  "appName": "Học tập Lớp 6",
+  "role": "grade-app-blueprint",
+  "sourceDocument": "docs/research/deep-research-lop-06.md",
+  "notes": [
+    "Đây là dữ liệu nền cho app Học tập Lớp 6, không phải nội dung cho HomePage trung tâm.",
+    "HomePage trung tâm chỉ hiển thị Lớp 6 như một card app trong danh mục.",
+    "Nội dung chi tiết môn/bài dùng cho route riêng /lop-6 và các route con."
+  ],
+  "subjects": [
+    {
+      "id": "tieng-anh",
+      "name": "Tiếng Anh",
+      "priority": 1,
+      "status": "planned_high_priority",
+      "annualPeriods": 105,
+      "weeklyPeriodsApprox": 3,
+      "appFit": "very_high",
+      "recommendedFeatures": [
+        "flashcards",
+        "audio",
+        "quiz",
+        "spaced_repetition",
+        "gamification"
+      ]
+    },
+    {
+      "id": "toan",
+      "name": "Toán",
+      "priority": 2,
+      "status": "ready_first_seed",
+      "annualPeriods": 140,
+      "weeklyPeriodsApprox": 4,
+      "appFit": "high",
+      "recommendedFeatures": [
+        "lesson_cards",
+        "practice",
+        "immediate_feedback",
+        "difficulty_levels",
+        "spaced_repetition"
+      ]
+    },
+    {
+      "id": "khtn",
+      "name": "Khoa học tự nhiên",
+      "priority": 3,
+      "status": "planned",
+      "annualPeriods": 140,
+      "weeklyPeriodsApprox": 4,
+      "appFit": "high",
+      "recommendedFeatures": [
+        "visual_cards",
+        "simulation_notes",
+        "quiz",
+        "video_notes",
+        "immediate_feedback"
+      ]
+    },
+    {
+      "id": "tin-hoc",
+      "name": "Tin học",
+      "priority": 4,
+      "status": "planned",
+      "annualPeriods": 35,
+      "weeklyPeriodsApprox": 1,
+      "appFit": "high",
+      "recommendedFeatures": [
+        "step_by_step",
+        "practice_tasks",
+        "screen_guides",
+        "checklist"
+      ]
+    },
+    {
+      "id": "ngu-van",
+      "name": "Ngữ văn",
+      "priority": 5,
+      "status": "later",
+      "annualPeriods": 140,
+      "weeklyPeriodsApprox": 4,
+      "appFit": "medium",
+      "recommendedFeatures": [
+        "reading_cards",
+        "short_answer",
+        "writing_prompt",
+        "sample_answer"
+      ]
+    },
+    {
+      "id": "lich-su-dia-ly",
+      "name": "Lịch sử & Địa lý",
+      "priority": 6,
+      "status": "later",
+      "annualPeriods": 105,
+      "weeklyPeriodsApprox": 3,
+      "appFit": "medium",
+      "recommendedFeatures": [
+        "timeline",
+        "map_quiz",
+        "memory_cards",
+        "image_based_questions"
+      ]
+    },
+    {
+      "id": "gdcd",
+      "name": "Giáo dục công dân",
+      "priority": 7,
+      "status": "later",
+      "annualPeriods": 35,
+      "weeklyPeriodsApprox": 1,
+      "appFit": "medium",
+      "recommendedFeatures": [
+        "scenario_quiz",
+        "reflection_cards",
+        "choice_consequence"
+      ]
+    },
+    {
+      "id": "cong-nghe",
+      "name": "Công nghệ",
+      "priority": 8,
+      "status": "later",
+      "annualPeriods": 35,
+      "weeklyPeriodsApprox": 1,
+      "appFit": "low_to_medium",
+      "recommendedFeatures": [
+        "video_notes",
+        "safety_cards",
+        "process_checklist",
+        "project_template"
+      ]
+    }
+  ],
+  "semesterDirection": {
+    "hk1": "Củng cố kiến thức nền tảng, khái niệm cơ bản và kỹ năng học ban đầu.",
+    "hk2": "Mở rộng, nâng cao và tăng tình huống vận dụng theo chương trình."
+  },
+  "lessonDesign": {
+    "cardsPerLesson": {
+      "min": 5,
+      "max": 10
+    },
+    "sessionMinutes": {
+      "recommended": "15-20",
+      "max": 30
+    },
+    "theoryPracticeRatio": "1:2",
+    "questionsPerLesson": {
+      "min": 3,
+      "max": 5
+    },
+    "reviewRule": "Nhắc ôn sau 1 tuần, hoặc sớm hơn nếu học sinh sai nhiều; sau 2-3 bài mới nên có bài ôn tập tổng hợp.",
+    "cardRules": [
+      "Mỗi card chỉ chứa 1-2 ý chính.",
+      "Xen kẽ lý thuyết, ví dụ, câu hỏi nhanh.",
+      "Sau mỗi khái niệm nên có active recall hoặc câu hỏi kiểm tra ngắn.",
+      "Sau mỗi câu trả lời cần immediate feedback."
+    ]
+  },
+  "learningMethods": [
+    {
+      "id": "spaced_repetition",
+      "name": "Lặp lại ngắt quãng",
+      "appUsage": "Nhắc ôn theo lịch và theo kết quả làm bài."
+    },
+    {
+      "id": "microlearning",
+      "name": "Học theo mô-đun nhỏ",
+      "appUsage": "Bài học 5-10 cards, phiên học 15-20 phút."
+    },
+    {
+      "id": "gamification",
+      "name": "Trò chơi hóa",
+      "appUsage": "Điểm, huy hiệu, streak, nhưng không lấn át nội dung học."
+    },
+    {
+      "id": "scaffolding",
+      "name": "Giáo dục theo bậc thang",
+      "appUsage": "Dễ đến khó, có gợi ý lúc đầu và giảm dần trợ giúp."
+    },
+    {
+      "id": "active_recall",
+      "name": "Hồi ức tích cực",
+      "appUsage": "Câu hỏi ngay sau card kiến thức."
+    },
+    {
+      "id": "immediate_feedback",
+      "name": "Phản hồi tức thì",
+      "appUsage": "Đúng/sai và giải thích ngay sau khi trả lời."
+    }
+  ],
+  "difficultyLevels": [
+    {
+      "id": 1,
+      "name": "Cơ bản",
+      "bloom": [
+        "Biết",
+        "Hiểu"
+      ],
+      "description": "Nhắc lại hoặc hiểu kiến thức cơ bản.",
+      "questionStyle": "Câu hỏi ngắn, kiểm tra định nghĩa/công thức/thông tin vừa học."
+    },
+    {
+      "id": 2,
+      "name": "Trung bình",
+      "bloom": [
+        "Hiểu",
+        "Vận dụng"
+      ],
+      "description": "Vận dụng kiến thức vào bài quen thuộc.",
+      "questionStyle": "Tính toán nhiều bước đơn giản, ghép nối, giải thích ngắn."
+    },
+    {
+      "id": 3,
+      "name": "Nâng cao",
+      "bloom": [
+        "Vận dụng",
+        "Vận dụng cao"
+      ],
+      "description": "Suy luận nhiều bước hoặc sáng tạo.",
+      "questionStyle": "Bài toán/tình huống mới, kết hợp nhiều khái niệm."
+    }
+  ],
+  "implementationPriority": [
+    {
+      "rank": 1,
+      "subjectId": "tieng-anh",
+      "reason": "Phù hợp flashcards, audio, game hóa, cần luyện thường xuyên."
+    },
+    {
+      "rank": 2,
+      "subjectId": "toan",
+      "reason": "Môn nền tảng, nhiều bài tập, dễ tạo feedback và độ khó."
+    },
+    {
+      "rank": 3,
+      "subjectId": "khtn",
+      "reason": "Dễ minh họa trực quan, có thí nghiệm/hiện tượng."
+    },
+    {
+      "rank": 4,
+      "subjectId": "tin-hoc",
+      "reason": "Phù hợp hướng dẫn từng bước và thực hành cơ bản."
+    },
+    {
+      "rank": 5,
+      "subjectId": "lich-su-dia-ly",
+      "reason": "Phù hợp quiz/timeline/map, làm sau khi có lõi luyện tập."
+    },
+    {
+      "rank": 6,
+      "subjectId": "gdcd",
+      "reason": "Phù hợp tình huống đạo đức/pháp luật, ưu tiên sau."
+    },
+    {
+      "rank": 7,
+      "subjectId": "cong-nghe",
+      "reason": "Nhiều thực hành thủ công, chuyển thành app khó hơn."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "role": "homepage-app-catalog",
+  "note": "Dữ liệu này phục vụ HomePage trung tâm. Không đưa chi tiết môn học lớp 6 lên hero.",
+  "filters": {
+    "levels": [
+      "Tất cả",
+      "Cấp 1",
+      "Cấp 2",
+      "Cấp 3"
+    ],
+    "grades": [
+      "Lớp 1",
+      "Lớp 2",
+      "Lớp 3",
+      "Lớp 4",
+      "Lớp 5",
+      "Lớp 6",
+      "Lớp 7",
+      "Lớp 8",
+      "Lớp 9",
+      "Lớp 10",
+      "Lớp 11",
+      "Lớp 12"
+    ]
+  },
+  "apps": [
+    {
+      "id": "hoc-tap-lop-06",
+      "title": "Học tập Lớp 6",
+      "level": "Cấp 2",
+      "grade": 6,
+      "status": "Sẵn sàng",
+      "badge": "Đang ưu tiên",
+      "description": "Trang riêng cho học sinh lớp 6, có bài học ngắn, luyện tập theo bài, lưu tiến độ và mở rộng thành bản desktop offline.",
+      "tags": [
+        "Toán",
+        "Tiếng Anh",
+        "KHTN"
+      ],
+      "webPath": "/lop-6",
+      "desktopStatus": "planned",
+      "cta": {
+        "primary": "Mở WebApp",
+        "secondary": "Tải Desktop"
+      }
+    },
+    {
+      "id": "hoc-tap-lop-07",
+      "title": "Học tập Lớp 7",
+      "level": "Cấp 2",
+      "grade": 7,
+      "status": "Sắp mở",
+      "badge": "Sau lớp 6",
+      "description": "Không gian học riêng cho lớp 7, sau này trỏ về webapp lớp 7 hoặc bộ cài desktop tương ứng.",
+      "tags": [
+        "Toán",
+        "Ngữ văn",
+        "Tiếng Anh"
+      ],
+      "webPath": "/lop-7",
+      "desktopStatus": "later",
+      "cta": {
+        "primary": "Xem trước",
+        "secondary": "Đang chuẩn bị"
+      }
+    },
+    {
+      "id": "hoc-tap-tieu-hoc",
+      "title": "Học tập Tiểu học",
+      "level": "Cấp 1",
+      "grade": null,
+      "status": "Ý tưởng",
+      "badge": "Nền tảng",
+      "description": "Cụm app nhỏ cho cấp 1, ưu tiên giao diện dễ nhìn, nhiều hình ảnh và thao tác nhẹ cho học sinh nhỏ tuổi.",
+      "tags": [
+        "Đọc",
+        "Viết",
+        "Tính toán"
+      ],
+      "webPath": "/cap-1",
+      "desktopStatus": "idea",
+      "cta": {
+        "primary": "Xem định hướng",
+        "secondary": "Chưa mở"
+      }
+    },
+    {
+      "id": "on-tap-cap-3",
+      "title": "Ôn tập Cấp 3",
+      "level": "Cấp 3",
+      "grade": null,
+      "status": "Ý tưởng",
+      "badge": "Dài hạn",
+      "description": "Khu app định hướng ôn tập, hệ thống hóa kiến thức, luyện đề và theo dõi mục tiêu học tập lớn hơn.",
+      "tags": [
+        "Toán",
+        "Văn",
+        "Anh"
+      ],
+      "webPath": "/cap-3",
+      "desktopStatus": "idea",
+      "cta": {
+        "primary": "Xem định hướng",
+        "secondary": "Chưa mở"
+      }
+    }
+  ]
+}

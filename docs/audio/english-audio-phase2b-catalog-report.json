@@ -1,0 +1,1621 @@
+{
+  "generatedAt": "2026-05-25T06:31:11.695Z",
+  "profileId": "en-v1",
+  "voice": "en-US-Neural2-F",
+  "outputDir": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1",
+  "counts": {
+    "lessons": 36,
+    "rawVocabularyEntries": 432,
+    "uniqueVocabularyAudio": 142,
+    "skippedVocabularyEntries": 0,
+    "rawQuestionOptionInstances": 3136,
+    "englishQuestionOptionInstances": 2570,
+    "uniqueQuestionOptionAudio": 348,
+    "skippedQuestionOptionInstances": 566,
+    "totalItems": 490
+  },
+  "skippedQuestionOptionSamples": [
+    {
+      "lessonId": 1,
+      "questionId": 1,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q001",
+      "optionKey": "A",
+      "text": "môn học",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 1,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q001",
+      "optionKey": "B",
+      "text": "người máy",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 1,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q001",
+      "optionKey": "C",
+      "text": "hộp bút",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 1,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q001",
+      "optionKey": "D",
+      "text": "máy tính bỏ túi",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 2,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q002",
+      "optionKey": "A",
+      "text": "thư viện",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 2,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q002",
+      "optionKey": "B",
+      "text": "sân chơi",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 2,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q002",
+      "optionKey": "C",
+      "text": "môn học",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 2,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q002",
+      "optionKey": "D",
+      "text": "bạn cùng lớp",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 3,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q003",
+      "optionKey": "A",
+      "text": "trò chơi",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 3,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q003",
+      "optionKey": "B",
+      "text": "thư viện",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 3,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q003",
+      "optionKey": "C",
+      "text": "đồng phục",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 3,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q003",
+      "optionKey": "D",
+      "text": "môn học",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 4,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q004",
+      "optionKey": "A",
+      "text": "thức ăn",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 4,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q004",
+      "optionKey": "B",
+      "text": "thành phố",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 4,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q004",
+      "optionKey": "C",
+      "text": "trường nội trú",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 4,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q004",
+      "optionKey": "D",
+      "text": "thư viện",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 5,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q005",
+      "optionKey": "A",
+      "text": "đồng phục",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 5,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q005",
+      "optionKey": "B",
+      "text": "bạn thân",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 5,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q005",
+      "optionKey": "C",
+      "text": "bài tập về nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 5,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q005",
+      "optionKey": "D",
+      "text": "hộp bút",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 6,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q006",
+      "optionKey": "A",
+      "text": "môn học",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 6,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q006",
+      "optionKey": "B",
+      "text": "bài học",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 6,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q006",
+      "optionKey": "C",
+      "text": "bạn thân",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 6,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q006",
+      "optionKey": "D",
+      "text": "trường quốc tế",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 7,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q007",
+      "optionKey": "A",
+      "text": "môn học",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 7,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q007",
+      "optionKey": "B",
+      "text": "sân chơi",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 7,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q007",
+      "optionKey": "C",
+      "text": "phòng ngủ",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 7,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q007",
+      "optionKey": "D",
+      "text": "ngôi nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 8,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q008",
+      "optionKey": "A",
+      "text": "hộp bút",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 8,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q008",
+      "optionKey": "B",
+      "text": "trường quốc tế",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 8,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q008",
+      "optionKey": "C",
+      "text": "thư viện",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 8,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q008",
+      "optionKey": "D",
+      "text": "bài tập về nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 9,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q009",
+      "optionKey": "A",
+      "text": "máy tính bỏ túi",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 9,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q009",
+      "optionKey": "B",
+      "text": "trường nội trú",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 9,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q009",
+      "optionKey": "C",
+      "text": "bạn thân",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 9,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q009",
+      "optionKey": "D",
+      "text": "thư viện",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 10,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q010",
+      "optionKey": "A",
+      "text": "đồng phục",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 10,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q010",
+      "optionKey": "B",
+      "text": "trường nội trú",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 10,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q010",
+      "optionKey": "C",
+      "text": "bài tập về nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 10,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q010",
+      "optionKey": "D",
+      "text": "sân chơi",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 11,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q011",
+      "optionKey": "A",
+      "text": "bài tập về nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 11,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q011",
+      "optionKey": "B",
+      "text": "hộp bút",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 11,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q011",
+      "optionKey": "C",
+      "text": "ngôi nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 11,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q011",
+      "optionKey": "D",
+      "text": "trường quốc tế",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 12,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q012",
+      "optionKey": "A",
+      "text": "khoa học",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 12,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q012",
+      "optionKey": "B",
+      "text": "bạn cùng lớp",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 12,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q012",
+      "optionKey": "C",
+      "text": "bài tập về nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 1,
+      "questionId": 12,
+      "questionSourceId": "eng6-b2-u01-vocabulary-my-new-school-q012",
+      "optionKey": "D",
+      "text": "thư viện",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 121,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q001",
+      "optionKey": "A",
+      "text": "thành phố",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 121,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q001",
+      "optionKey": "B",
+      "text": "phòng khách",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 121,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q001",
+      "optionKey": "C",
+      "text": "phòng tắm",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 121,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q001",
+      "optionKey": "D",
+      "text": "máy rửa bát",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 122,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q002",
+      "optionKey": "A",
+      "text": "người máy",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 122,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q002",
+      "optionKey": "B",
+      "text": "phòng ngủ",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 122,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q002",
+      "optionKey": "C",
+      "text": "ngôi nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 122,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q002",
+      "optionKey": "D",
+      "text": "tủ chén",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 123,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q003",
+      "optionKey": "A",
+      "text": "phòng ngủ",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 123,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q003",
+      "optionKey": "B",
+      "text": "đèn",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 123,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q003",
+      "optionKey": "C",
+      "text": "phòng tắm",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 123,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q003",
+      "optionKey": "D",
+      "text": "nhà bếp",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 124,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q004",
+      "optionKey": "A",
+      "text": "tủ chén",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 124,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q004",
+      "optionKey": "B",
+      "text": "đèn",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 124,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q004",
+      "optionKey": "C",
+      "text": "phòng tắm",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 124,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q004",
+      "optionKey": "D",
+      "text": "tủ quần áo",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 125,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q005",
+      "optionKey": "A",
+      "text": "đèn",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 125,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q005",
+      "optionKey": "B",
+      "text": "tủ quần áo",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 125,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q005",
+      "optionKey": "C",
+      "text": "gác mái",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 125,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q005",
+      "optionKey": "D",
+      "text": "ghế sô pha",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 126,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q006",
+      "optionKey": "A",
+      "text": "phòng tắm",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 126,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q006",
+      "optionKey": "B",
+      "text": "tủ quần áo",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 126,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q006",
+      "optionKey": "C",
+      "text": "ghế sô pha",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 126,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q006",
+      "optionKey": "D",
+      "text": "phòng khách",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 127,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q007",
+      "optionKey": "A",
+      "text": "thành phố",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 127,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q007",
+      "optionKey": "B",
+      "text": "phòng ngủ",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 127,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q007",
+      "optionKey": "C",
+      "text": "tủ chén",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 127,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q007",
+      "optionKey": "D",
+      "text": "người máy",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 128,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q008",
+      "optionKey": "A",
+      "text": "bạn thân",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 128,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q008",
+      "optionKey": "B",
+      "text": "người máy",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 128,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q008",
+      "optionKey": "C",
+      "text": "tủ quần áo",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 128,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q008",
+      "optionKey": "D",
+      "text": "thức ăn",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 129,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q009",
+      "optionKey": "A",
+      "text": "đèn",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 129,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q009",
+      "optionKey": "B",
+      "text": "bạn thân",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 129,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q009",
+      "optionKey": "C",
+      "text": "ở giữa",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 129,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q009",
+      "optionKey": "D",
+      "text": "phòng ngủ",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 130,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q010",
+      "optionKey": "A",
+      "text": "tủ lạnh",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 130,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q010",
+      "optionKey": "B",
+      "text": "tủ chén",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 130,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q010",
+      "optionKey": "C",
+      "text": "trò chơi",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 130,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q010",
+      "optionKey": "D",
+      "text": "ngôi nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 131,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q011",
+      "optionKey": "A",
+      "text": "tủ lạnh",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 131,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q011",
+      "optionKey": "B",
+      "text": "máy rửa bát",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 131,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q011",
+      "optionKey": "C",
+      "text": "tủ quần áo",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 131,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q011",
+      "optionKey": "D",
+      "text": "ngôi nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 132,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q012",
+      "optionKey": "A",
+      "text": "ở giữa",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 132,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q012",
+      "optionKey": "B",
+      "text": "tủ chén",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 132,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q012",
+      "optionKey": "C",
+      "text": "gác mái",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 132,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q012",
+      "optionKey": "D",
+      "text": "bạn thân",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 4,
+      "questionId": 144,
+      "questionSourceId": "eng6-b2-u02-vocabulary-my-house-q024",
+      "optionKey": "D",
+      "text": "thành phố",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 241,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q001",
+      "optionKey": "A",
+      "text": "môn học",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 241,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q001",
+      "optionKey": "B",
+      "text": "chăm chỉ",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 241,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q001",
+      "optionKey": "C",
+      "text": "thân thiện",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 241,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q001",
+      "optionKey": "D",
+      "text": "yêu thể thao",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 242,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q002",
+      "optionKey": "A",
+      "text": "thành phố",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 242,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q002",
+      "optionKey": "B",
+      "text": "vui tính",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 242,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q002",
+      "optionKey": "C",
+      "text": "tốt bụng",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 242,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q002",
+      "optionKey": "D",
+      "text": "tóc xoăn",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 243,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q003",
+      "optionKey": "A",
+      "text": "chăm chỉ",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 243,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q003",
+      "optionKey": "B",
+      "text": "thành phố",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 243,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q003",
+      "optionKey": "C",
+      "text": "ngôi nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 243,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q003",
+      "optionKey": "D",
+      "text": "vui tính",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 244,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q004",
+      "optionKey": "A",
+      "text": "yêu thể thao",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 244,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q004",
+      "optionKey": "B",
+      "text": "ngôi nhà",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 244,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q004",
+      "optionKey": "C",
+      "text": "thông minh",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 244,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q004",
+      "optionKey": "D",
+      "text": "trò chơi",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 245,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q005",
+      "optionKey": "A",
+      "text": "nhút nhát",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 245,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q005",
+      "optionKey": "B",
+      "text": "thành phố",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 245,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q005",
+      "optionKey": "C",
+      "text": "thông minh",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 245,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q005",
+      "optionKey": "D",
+      "text": "tốt bụng",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 246,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q006",
+      "optionKey": "A",
+      "text": "trò chơi",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 246,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q006",
+      "optionKey": "B",
+      "text": "tóc thẳng",
+      "reason": "non-english-or-mixed"
+    },
+    {
+      "lessonId": 7,
+      "questionId": 246,
+      "questionSourceId": "eng6-b2-u03-vocabulary-my-friends-q006",
+      "optionKey": "C",
+      "text": "sáng tạo",
+      "reason": "non-english-or-mixed"
+    }
+  ],
+  "sampleItems": [
+    {
+      "id": "eng6-p2b-vocab-00001",
+      "sourceType": "vocabulary-word",
+      "sourceId": "subject-05ff882e",
+      "lessonId": 1,
+      "title": "subject",
+      "text": "subject",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\subject-05ff882e.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/subject-05ff882e.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00002",
+      "sourceType": "vocabulary-word",
+      "sourceId": "classmate-f6251017",
+      "lessonId": 1,
+      "title": "classmate",
+      "text": "classmate",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\classmate-f6251017.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/classmate-f6251017.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00003",
+      "sourceType": "vocabulary-word",
+      "sourceId": "uniform-10ab68a6",
+      "lessonId": 1,
+      "title": "uniform",
+      "text": "uniform",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\uniform-10ab68a6.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/uniform-10ab68a6.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00004",
+      "sourceType": "vocabulary-word",
+      "sourceId": "library-0fc9673d",
+      "lessonId": 1,
+      "title": "library",
+      "text": "library",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\library-0fc9673d.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/library-0fc9673d.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00005",
+      "sourceType": "vocabulary-word",
+      "sourceId": "homework-09f46780",
+      "lessonId": 1,
+      "title": "homework",
+      "text": "homework",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\homework-09f46780.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/homework-09f46780.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00006",
+      "sourceType": "vocabulary-word",
+      "sourceId": "lesson-b8cad31e",
+      "lessonId": 1,
+      "title": "lesson",
+      "text": "lesson",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\lesson-b8cad31e.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/lesson-b8cad31e.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00007",
+      "sourceType": "vocabulary-word",
+      "sourceId": "playground-9b1145b7",
+      "lessonId": 1,
+      "title": "playground",
+      "text": "playground",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\playground-9b1145b7.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/playground-9b1145b7.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00008",
+      "sourceType": "vocabulary-word",
+      "sourceId": "pencil-case-f498b399",
+      "lessonId": 1,
+      "title": "pencil case",
+      "text": "pencil case",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\pencil-case-f498b399.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/pencil-case-f498b399.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00009",
+      "sourceType": "vocabulary-word",
+      "sourceId": "calculator-12e263f2",
+      "lessonId": 1,
+      "title": "calculator",
+      "text": "calculator",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\calculator-12e263f2.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/calculator-12e263f2.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00010",
+      "sourceType": "vocabulary-word",
+      "sourceId": "boarding-school-5336c156",
+      "lessonId": 1,
+      "title": "boarding school",
+      "text": "boarding school",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\boarding-school-5336c156.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/boarding-school-5336c156.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00011",
+      "sourceType": "vocabulary-word",
+      "sourceId": "international-school-8aa40976",
+      "lessonId": 1,
+      "title": "international school",
+      "text": "international school",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\international-school-8aa40976.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/international-school-8aa40976.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00012",
+      "sourceType": "vocabulary-word",
+      "sourceId": "science-95896230",
+      "lessonId": 1,
+      "title": "science",
+      "text": "science",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\science-95896230.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/science-95896230.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00013",
+      "sourceType": "vocabulary-word",
+      "sourceId": "living-room-7d4ca31e",
+      "lessonId": 4,
+      "title": "living room",
+      "text": "living room",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\living-room-7d4ca31e.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/living-room-7d4ca31e.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00014",
+      "sourceType": "vocabulary-word",
+      "sourceId": "bedroom-3f432036",
+      "lessonId": 4,
+      "title": "bedroom",
+      "text": "bedroom",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\bedroom-3f432036.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/bedroom-3f432036.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00015",
+      "sourceType": "vocabulary-word",
+      "sourceId": "kitchen-70e5a172",
+      "lessonId": 4,
+      "title": "kitchen",
+      "text": "kitchen",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\kitchen-70e5a172.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/kitchen-70e5a172.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00016",
+      "sourceType": "vocabulary-word",
+      "sourceId": "bathroom-d06b6c58",
+      "lessonId": 4,
+      "title": "bathroom",
+      "text": "bathroom",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\bathroom-d06b6c58.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/bathroom-d06b6c58.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00017",
+      "sourceType": "vocabulary-word",
+      "sourceId": "attic-dc2b4161",
+      "lessonId": 4,
+      "title": "attic",
+      "text": "attic",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\attic-dc2b4161.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/attic-dc2b4161.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00018",
+      "sourceType": "vocabulary-word",
+      "sourceId": "sofa-0340f00d",
+      "lessonId": 4,
+      "title": "sofa",
+      "text": "sofa",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\sofa-0340f00d.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/sofa-0340f00d.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00019",
+      "sourceType": "vocabulary-word",
+      "sourceId": "cupboard-f1ac6f66",
+      "lessonId": 4,
+      "title": "cupboard",
+      "text": "cupboard",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\cupboard-f1ac6f66.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/cupboard-f1ac6f66.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00020",
+      "sourceType": "vocabulary-word",
+      "sourceId": "wardrobe-4f27ed46",
+      "lessonId": 4,
+      "title": "wardrobe",
+      "text": "wardrobe",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\wardrobe-4f27ed46.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/wardrobe-4f27ed46.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00021",
+      "sourceType": "vocabulary-word",
+      "sourceId": "lamp-ca4c69c4",
+      "lessonId": 4,
+      "title": "lamp",
+      "text": "lamp",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\lamp-ca4c69c4.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/lamp-ca4c69c4.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00022",
+      "sourceType": "vocabulary-word",
+      "sourceId": "fridge-66c37dd7",
+      "lessonId": 4,
+      "title": "fridge",
+      "text": "fridge",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\fridge-66c37dd7.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/fridge-66c37dd7.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00023",
+      "sourceType": "vocabulary-word",
+      "sourceId": "dishwasher-fe848f52",
+      "lessonId": 4,
+      "title": "dishwasher",
+      "text": "dishwasher",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\dishwasher-fe848f52.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/dishwasher-fe848f52.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00024",
+      "sourceType": "vocabulary-word",
+      "sourceId": "between-b20e1112",
+      "lessonId": 4,
+      "title": "between",
+      "text": "between",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\between-b20e1112.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/between-b20e1112.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00025",
+      "sourceType": "vocabulary-word",
+      "sourceId": "friendly-e255a3c5",
+      "lessonId": 7,
+      "title": "friendly",
+      "text": "friendly",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\friendly-e255a3c5.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/friendly-e255a3c5.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00026",
+      "sourceType": "vocabulary-word",
+      "sourceId": "kind-76762bbc",
+      "lessonId": 7,
+      "title": "kind",
+      "text": "kind",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\kind-76762bbc.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/kind-76762bbc.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00027",
+      "sourceType": "vocabulary-word",
+      "sourceId": "funny-b39d5876",
+      "lessonId": 7,
+      "title": "funny",
+      "text": "funny",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\funny-b39d5876.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/funny-b39d5876.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00028",
+      "sourceType": "vocabulary-word",
+      "sourceId": "clever-7192a005",
+      "lessonId": 7,
+      "title": "clever",
+      "text": "clever",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\clever-7192a005.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/clever-7192a005.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00029",
+      "sourceType": "vocabulary-word",
+      "sourceId": "shy-33fe91e0",
+      "lessonId": 7,
+      "title": "shy",
+      "text": "shy",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\shy-33fe91e0.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/shy-33fe91e0.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00030",
+      "sourceType": "vocabulary-word",
+      "sourceId": "creative-01b063fb",
+      "lessonId": 7,
+      "title": "creative",
+      "text": "creative",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\creative-01b063fb.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/creative-01b063fb.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00031",
+      "sourceType": "vocabulary-word",
+      "sourceId": "confident-885e9022",
+      "lessonId": 7,
+      "title": "confident",
+      "text": "confident",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\confident-885e9022.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/confident-885e9022.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00032",
+      "sourceType": "vocabulary-word",
+      "sourceId": "hard-working-b5c19279",
+      "lessonId": 7,
+      "title": "hard-working",
+      "text": "hard-working",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\hard-working-b5c19279.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/hard-working-b5c19279.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00033",
+      "sourceType": "vocabulary-word",
+      "sourceId": "curly-hair-489012f1",
+      "lessonId": 7,
+      "title": "curly hair",
+      "text": "curly hair",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\curly-hair-489012f1.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/curly-hair-489012f1.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00034",
+      "sourceType": "vocabulary-word",
+      "sourceId": "straight-hair-c8d17808",
+      "lessonId": 7,
+      "title": "straight hair",
+      "text": "straight hair",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\straight-hair-c8d17808.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/straight-hair-c8d17808.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00035",
+      "sourceType": "vocabulary-word",
+      "sourceId": "slim-1b48926b",
+      "lessonId": 7,
+      "title": "slim",
+      "text": "slim",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\slim-1b48926b.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/slim-1b48926b.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00036",
+      "sourceType": "vocabulary-word",
+      "sourceId": "sporty-416c3c57",
+      "lessonId": 7,
+      "title": "sporty",
+      "text": "sporty",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\sporty-416c3c57.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/sporty-416c3c57.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00037",
+      "sourceType": "vocabulary-word",
+      "sourceId": "neighbourhood-ac4e3c23",
+      "lessonId": 10,
+      "title": "neighbourhood",
+      "text": "neighbourhood",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\neighbourhood-ac4e3c23.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/neighbourhood-ac4e3c23.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00038",
+      "sourceType": "vocabulary-word",
+      "sourceId": "market-9a941542",
+      "lessonId": 10,
+      "title": "market",
+      "text": "market",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\market-9a941542.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/market-9a941542.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00039",
+      "sourceType": "vocabulary-word",
+      "sourceId": "museum-46ae92aa",
+      "lessonId": 10,
+      "title": "museum",
+      "text": "museum",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\museum-46ae92aa.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/museum-46ae92aa.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "eng6-p2b-vocab-00040",
+      "sourceType": "vocabulary-word",
+      "sourceId": "post-office-63958674",
+      "lessonId": 10,
+      "title": "post office",
+      "text": "post office",
+      "localOutputPath": "F:\\1_A_Disk_D\\khuong-binh\\lop6-tts-audio\\en-v1\\vocabulary-word\\post-office-63958674.mp3",
+      "r2ObjectKey": "audio/tts/assets/en-v1/vocabulary-word/post-office-63958674.mp3",
+      "rawInstanceCount": 3,
+      "lessonIds": [
+        10,
+        11,
+        12
+      ]
+    }
+  ]
+}
