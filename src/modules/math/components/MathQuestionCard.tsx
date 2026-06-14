@@ -42,12 +42,14 @@ export function MathQuestionCard({
   const openAIHint = () => {
     openAIChatIntent({
       prompt: `Dopi hãy gợi ý cách làm câu luyện tập Toán lớp 6 này, nhưng chưa nêu đáp án cuối cùng.\n\nCâu hỏi: ${question.questionText}\n\n${dopiPracticeFormat}\n\nGiới hạn: tối đa 120 từ.`,
+      displayText: 'Dopi gợi ý cách làm câu này giúp em.',
       autoSend: true,
     });
   };
   const openAIExplanation = () => {
     openAIChatIntent({
       prompt: `Dopi hãy giải thích câu luyện tập Toán lớp 6 này.\n\nCâu hỏi: ${question.questionText}\nĐáp án đúng/tham khảo: ${question.correctAnswer}\n\n${dopiPracticeFormat}\n\nGiới hạn: tối đa 150 từ.`,
+      displayText: 'Dopi giải thích câu này giúp em.',
       autoSend: true,
     });
   };
