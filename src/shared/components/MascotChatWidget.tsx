@@ -143,20 +143,21 @@ export function MascotChatWidget() {
 
       {/* Chat Panel */}
       {open && (
-        <div className="fixed bottom-4 right-4 z-50 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden animate-in slide-in-from-bottom-10 duration-200">
+        <div className="fixed inset-x-3 bottom-3 z-50 max-h-[85dvh] overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-2xl animate-in slide-in-from-bottom-10 duration-200 sm:inset-x-auto sm:bottom-4 sm:right-4 sm:w-96">
           {/* Header */}
-          <div className="bg-gradient-to-r from-blue-500 to-cyan-400 p-4 flex items-center justify-between">
-            <div className="flex items-center gap-2">
+          <div className="flex items-start justify-between gap-2 bg-gradient-to-r from-blue-500 to-cyan-400 p-3 sm:p-4">
+            <div className="flex min-w-0 items-center gap-2">
               <img
                 src={`${ASSET_BASE_URL}dopi-avatar.png`}
                 alt="Dopi"
-                className="h-10 w-10 rounded-2xl bg-white/90 object-contain p-1 shadow-sm"
+                className="h-10 w-10 shrink-0 rounded-2xl bg-white/90 object-contain p-1 shadow-sm"
               />
-              <div>
+              <div className="min-w-0">
                 <div className="font-bold text-white">Dopi</div>
-                <div className="text-xs text-white/80 flex items-center gap-2">
+                <div className="flex flex-wrap items-center gap-2 text-xs text-white/80">
                   <span>Chat với Mascot</span>
-                  <AiCapacityBar showTooltip={false} refreshInterval={60_000} />                  <button
+                  <AiCapacityBar showTooltip={false} refreshInterval={60_000} />
+                  <button
                     type="button"
                     onClick={() => window.dispatchEvent(new CustomEvent('hhk:dopi-key-popup-open'))}
                     className="inline-flex items-center gap-1 rounded-full border border-white/30 bg-white/15 px-2 py-0.5 text-[10px] font-semibold text-white hover:bg-white/25"
@@ -169,14 +170,16 @@ export function MascotChatWidget() {
             </div>
             <button
               onClick={() => setOpen(false)}
-              className="text-white/80 hover:text-white p-1"
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/25 active:scale-95"
+              aria-label="Đóng chat Dopi"
+              title="Đóng"
             >
-              <X className="w-5 h-5" />
+              <X className="h-6 w-6" />
             </button>
           </div>
 
           {/* Messages */}
-          <div ref={scrollRef} className="h-80 overflow-y-auto p-4 space-y-3 bg-gray-50">
+          <div ref={scrollRef} className="h-[52dvh] max-h-80 overflow-y-auto space-y-3 bg-gray-50 p-4">
             {messages.map(msg => (
               <div
                 key={msg.id}
@@ -204,9 +207,9 @@ export function MascotChatWidget() {
           </div>
 
           {/* Input */}
-          <div className="p-3 border-t border-gray-200 bg-white">
+          <div className="border-t border-gray-200 bg-white p-3">
             {!aiEnabled && (
-              <div className="text-xs text-red-500 mb-2 text-center">
+              <div className="mb-2 text-center text-xs text-red-500">
                 ⚠️ Dung lượng AI đã hết! Nhờ bố mẹ mua thêm nhé!
               </div>
             )}
@@ -219,14 +222,14 @@ export function MascotChatWidget() {
                 onKeyPress={handleKeyPress}
                 placeholder={aiEnabled ? "Hỏi Dopi điều gì đó..." : "Dung lượng đã hết..."}
                 disabled={sending || !aiEnabled}
-                className="flex-1 px-3 py-2 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-400 focus:border-transparent text-sm disabled:bg-gray-100"
+                className="min-w-0 flex-1 rounded-xl border border-gray-200 px-3 py-2 text-sm focus:border-transparent focus:ring-2 focus:ring-blue-400 disabled:bg-gray-100"
               />
               <button
                 onClick={sendMessage}
                 disabled={sending || !inputText.trim() || !aiEnabled}
-                className="px-3 py-2 bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition disabled:opacity-50"
+                className="rounded-xl bg-blue-500 px-3 py-2 text-white transition hover:bg-blue-600 disabled:opacity-50"
               >
-                <Send className="w-4 h-4" />
+                <Send className="h-4 w-4" />
               </button>
             </div>
           </div>
