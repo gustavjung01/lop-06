@@ -17,6 +17,16 @@ type MathQuestionCardProps = {
   onAnswer: (answer: string) => void;
 };
 
+const dopiPracticeFormat = [
+  'Trả lời theo đúng khung sau, ngắn gọn và dễ hiểu:',
+  '1. Hiểu nhanh: nêu ý chính trong 1 câu.',
+  '2. Cách làm: ghi 2 đến 4 bước rõ ràng.',
+  '3. Lỗi dễ nhầm: nhắc 1 lỗi học sinh hay mắc.',
+  '4. Mẹo nhớ: 1 câu ngắn.',
+  '5. Tự kiểm tra: hỏi lại 1 câu nhỏ.',
+  'Không dùng bảng. Không lan man. Xưng là Dopi.',
+].join('\n');
+
 export function MathQuestionCard({
   question,
   selectedAnswer,
@@ -31,13 +41,13 @@ export function MathQuestionCard({
   const wrongExplanation = selectedAnswer ? getWrongAnswerExplanation(question, selectedAnswer) : '';
   const openAIHint = () => {
     openAIChatIntent({
-      prompt: `Gợi ý cách làm câu luyện tập Toán lớp 6 này cho học sinh, nhưng chưa nêu đáp án cuối cùng ngay. Câu hỏi: ${question.questionText}. Hãy giải thích hướng làm thật ngắn gọn, dễ hiểu.`,
+      prompt: `Dopi hãy gợi ý cách làm câu luyện tập Toán lớp 6 này, nhưng chưa nêu đáp án cuối cùng.\n\nCâu hỏi: ${question.questionText}\n\n${dopiPracticeFormat}\n\nGiới hạn: tối đa 120 từ.`,
       autoSend: true,
     });
   };
   const openAIExplanation = () => {
     openAIChatIntent({
-      prompt: `Giải thích câu luyện tập Toán lớp 6 này cho học sinh. Câu hỏi: ${question.questionText}. Đáp án đúng/tham khảo: ${question.correctAnswer}. Hãy giải thích thật dễ hiểu, ngắn gọn và có mẹo nhớ nhanh.`,
+      prompt: `Dopi hãy giải thích câu luyện tập Toán lớp 6 này.\n\nCâu hỏi: ${question.questionText}\nĐáp án đúng/tham khảo: ${question.correctAnswer}\n\n${dopiPracticeFormat}\n\nGiới hạn: tối đa 150 từ.`,
       autoSend: true,
     });
   };
