@@ -29,6 +29,7 @@ export function MathLessonDetailPage({ lesson, onBack, onPractice }: MathLessonD
   const openLessonAIExplanation = () => {
     openAIChatIntent({
       prompt: `Dopi hãy giải thích bài học Toán lớp 6 này.\n\nTên bài: ${lesson.title}\nMục tiêu: ${lesson.objective}\nTóm tắt: ${lesson.summarySimple}\nMẹo học có sẵn: ${lesson.tips}\n\n${dopiLessonFormat}\n\nGiới hạn: tối đa 180 từ.`,
+      displayText: 'Dopi giải thích bài này giúp em.',
       autoSend: true,
     });
   };
