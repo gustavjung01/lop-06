@@ -20,7 +20,11 @@ interface ChatMessage {
   isLoading?: boolean;
 }
 
-export function MascotChatWidget() {
+type MascotChatWidgetProps = {
+  hideFloatingButton?: boolean;
+};
+
+export function MascotChatWidget({ hideFloatingButton = false }: MascotChatWidgetProps) {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputText, setInputText] = useState('');
@@ -126,8 +130,9 @@ export function MascotChatWidget() {
   return (
     <>
       {/* Floating Button */}
-      {!open && (
+      {!open && !hideFloatingButton && (
         <button
+          type="button"
           onClick={() => setOpen(true)}
           className="fixed bottom-4 right-4 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-sky-100 to-blue-100 p-1.5 shadow-xl shadow-blue-300/70 ring-2 ring-white transition-all hover:scale-110 hover:shadow-2xl"
           aria-label="Mở chat với Dopi"
@@ -169,6 +174,7 @@ export function MascotChatWidget() {
               </div>
             </div>
             <button
+              type="button"
               onClick={() => setOpen(false)}
               className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/15 text-white transition hover:bg-white/25 active:scale-95"
               aria-label="Đóng chat Dopi"
@@ -225,6 +231,7 @@ export function MascotChatWidget() {
                 className="min-w-0 flex-1 rounded-xl border border-gray-200 px-3 py-2 text-sm focus:border-transparent focus:ring-2 focus:ring-blue-400 disabled:bg-gray-100"
               />
               <button
+                type="button"
                 onClick={sendMessage}
                 disabled={sending || !inputText.trim() || !aiEnabled}
                 className="rounded-xl bg-blue-500 px-3 py-2 text-white transition hover:bg-blue-600 disabled:opacity-50"
