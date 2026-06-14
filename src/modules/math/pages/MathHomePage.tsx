@@ -34,6 +34,7 @@ function writeMathHash(view: MathPageView, lessonId?: number) {
 
   if (window.location.hash === nextHash) return;
   window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}${nextHash}`);
+  window.dispatchEvent(new HashChangeEvent('hashchange'));
 }
 
 function readMathRoute(defaultLessonId: number): MathRoute {
@@ -73,6 +74,12 @@ export function MathHomePage({ onBackToDashboard }: MathHomePageProps) {
   const toast = useToast();
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && !window.location.hash.replace(/^#\/?/, '').startsWith('math')) {
+      writeMathHash(view, selectedLessonId);
+    }
+  }, []);
+
+  useEffect(() => {
     const handleHashChange = () => {
       const nextRoute = readMathRoute(defaultLessonId);
       setSelectedLessonId(nextRoute.lessonId);
@@ -103,6 +110,7 @@ export function MathHomePage({ onBackToDashboard }: MathHomePageProps) {
   const goDashboard = () => {
     if (typeof window !== 'undefined') {
       window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#dashboard`);
+      window.dispatchEvent(new HashChangeEvent('hashchange'));
     }
     onBackToDashboard();
   };
