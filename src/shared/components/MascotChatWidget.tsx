@@ -6,10 +6,12 @@
  */
 
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { X, Send, MessageCircle, ExternalLink } from 'lucide-react';
+import { X, Send, ExternalLink } from 'lucide-react';
 import { sendToServerAIWithStoredKey, getDopiAICapacity } from '../services/serverAiChat';
 import { AiCapacityBar } from './AiCapacityBar';
 import { AI_CHAT_INTENT_EVENT, type AIChatIntentDetail } from '../services/aiChatIntent';
+
+const ASSET_BASE_URL = (import.meta as any).env?.BASE_URL || '/';
 
 interface ChatMessage {
   id: number;
@@ -127,9 +129,15 @@ export function MascotChatWidget() {
       {!open && (
         <button
           onClick={() => setOpen(true)}
-          className="fixed bottom-4 right-4 z-50 w-14 h-14 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center justify-center"
+          className="fixed bottom-4 right-4 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-sky-100 to-blue-100 p-1.5 shadow-xl shadow-blue-300/70 ring-2 ring-white transition-all hover:scale-110 hover:shadow-2xl"
+          aria-label="Mở chat với Dopi"
+          title="Chat với Dopi"
         >
-          <MessageCircle className="w-6 h-6" />
+          <img
+            src={`${ASSET_BASE_URL}dopi-avatar.png`}
+            alt="Dopi"
+            className="h-full w-full object-contain drop-shadow-[0_10px_14px_rgba(37,99,235,0.28)]"
+          />
         </button>
       )}
 
@@ -139,7 +147,11 @@ export function MascotChatWidget() {
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-500 to-cyan-400 p-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <span className="text-2xl">🐬</span>
+              <img
+                src={`${ASSET_BASE_URL}dopi-avatar.png`}
+                alt="Dopi"
+                className="h-10 w-10 rounded-2xl bg-white/90 object-contain p-1 shadow-sm"
+              />
               <div>
                 <div className="font-bold text-white">Dopi</div>
                 <div className="text-xs text-white/80 flex items-center gap-2">
