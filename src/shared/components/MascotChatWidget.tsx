@@ -66,7 +66,7 @@ export function MascotChatWidget() {
     const studentName = localStorage.getItem('lop6.student.name') || 'Bạn';
 
     try {
-      const resp = await sendToServerAIWithStoredKey(text, studentName, 'dopi');
+      const resp = await sendToServerAIWithStoredKey(text, 'dopi', studentName);
 
       setMessages(prev => prev.map(m => {
         if (m.id === loadingId) {
