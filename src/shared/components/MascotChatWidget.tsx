@@ -33,21 +33,30 @@ export function MascotChatWidget({ hideFloatingButton = false }: MascotChatWidge
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Check AI capacity when open
+  // Check AI capacity when open. Do not overwrite a first auto-sent message with the welcome message.
   useEffect(() => {
-    if (open) {
-      getDopiAICapacity().then(result => {
-        setAiEnabled(result.ok && result.balance > 0);
-        if (messages.length === 0) {
-          setMessages([{
-            id: Date.now(),
-            from: 'mascot',
-            text: '🐬 Ê! Mình là Dopi đây! Hỏi mình bất cứ điều gì về bài học nhé!',
-          }]);
-        }
+    if (!open) return;
+
+    let alive = true;
+
+    getDopiAICapacity().then(result => {
+      if (!alive) return;
+
+      setAiEnabled(result.ok && result.balance > 0);
+      setMessages(prev => {
+        if (prev.length > 0) return prev;
+        return [{
+          id: Date.now(),
+          from: 'mascot',
+          text: '🐬 Ê! Mình là Dopi đây! Hỏi mình bất cứ điều gì về bài học nhé!',
+        }];
       });
-    }
-  }, [open, messages.length]);
+    });
+
+    return () => {
+      alive = false;
+    };
+  }, [open]);
 
   // Auto scroll
   useEffect(() => {
