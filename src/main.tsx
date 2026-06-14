@@ -3,10 +3,20 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import Lop6App from './app/Lop6App';
 
+function getCurrentHashRoute() {
+  if (typeof window === 'undefined') return '';
+  return window.location.hash.replace(/^#\/?/, '');
+}
+
+function syncMathRouteClass() {
+  if (typeof document === 'undefined') return;
+  document.body.classList.toggle('hhk-route-math', getCurrentHashRoute().startsWith('math'));
+}
+
 function openMathFromDashboardIfNeeded() {
   if (typeof window === 'undefined') return;
 
-  const route = window.location.hash.replace(/^#\/?/, '');
+  const route = getCurrentHashRoute();
   if (!route.startsWith('math')) return;
 
   const buttons = Array.from(document.querySelectorAll('button'));
@@ -20,9 +30,15 @@ function openMathFromDashboardIfNeeded() {
 
 function Lop6AppWithRouteBoot() {
   useEffect(() => {
-    const bootTimers = [50, 250, 650].map((delay) => window.setTimeout(openMathFromDashboardIfNeeded, delay));
+    syncMathRouteClass();
+
+    const bootTimers = [50, 250, 650].map((delay) => window.setTimeout(() => {
+      syncMathRouteClass();
+      openMathFromDashboardIfNeeded();
+    }, delay));
 
     const handleHashChange = () => {
+      syncMathRouteClass();
       window.setTimeout(openMathFromDashboardIfNeeded, 50);
     };
 
