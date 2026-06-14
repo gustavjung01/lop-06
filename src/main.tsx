@@ -1,6 +1,7 @@
 ﻿import { StrictMode, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
+import './math-route.css';
 import Lop6App from './app/Lop6App';
 
 function getCurrentHashRoute() {
