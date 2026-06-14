@@ -1,5 +1,5 @@
 import { ArrowLeft, Calculator, Layers3 } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import {
   getActiveMathLessons,
@@ -16,16 +16,96 @@ import { MathPracticePage } from './MathPracticePage';
 
 type MathPageView = 'home' | 'detail' | 'practice';
 
+type MathRoute = {
+  view: MathPageView;
+  lessonId: number;
+};
+
 type MathHomePageProps = {
   onBackToDashboard: () => void;
 };
 
+function writeMathHash(view: MathPageView, lessonId?: number) {
+  if (typeof window === 'undefined') return;
+
+  const nextHash = view === 'home'
+    ? '#math'
+    : `#math/${view}/${lessonId || 1}`;
+
+  if (window.location.hash === nextHash) return;
+  window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}${nextHash}`);
+}
+
+function readMathRoute(defaultLessonId: number): MathRoute {
+  if (typeof window === 'undefined') {
+    return { view: 'home', lessonId: defaultLessonId };
+  }
+
+  const hash = window.location.hash.replace(/^#\/?/, '');
+  const parts = hash.split('/').filter(Boolean);
+
+  if (parts[0] !== 'math') {
+    return { view: 'home', lessonId: defaultLessonId };
+  }
+
+  const routeView = parts[1];
+  const routeLessonId = Number(parts[2]);
+  const lessonId = Number.isFinite(routeLessonId) && routeLessonId > 0 ? routeLessonId : defaultLessonId;
+
+  if (routeView === 'lesson' || routeView === 'detail') {
+    return { view: 'detail', lessonId };
+  }
+
+  if (routeView === 'practice') {
+    return { view: 'practice', lessonId };
+  }
+
+  return { view: 'home', lessonId };
+}
+
 export function MathHomePage({ onBackToDashboard }: MathHomePageProps) {
   const lessons = getActiveMathLessons();
-  const [view, setView] = useState<MathPageView>('home');
-  const [selectedLessonId, setSelectedLessonId] = useState(lessons[0]?.id ?? 1);
+  const defaultLessonId = lessons[0]?.id ?? 1;
+  const initialRoute = readMathRoute(defaultLessonId);
+  const [view, setView] = useState<MathPageView>(initialRoute.view);
+  const [selectedLessonId, setSelectedLessonId] = useState(initialRoute.lessonId);
   const selectedLesson = getMathLessonById(selectedLessonId) ?? lessons[0];
   const toast = useToast();
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const nextRoute = readMathRoute(defaultLessonId);
+      setSelectedLessonId(nextRoute.lessonId);
+      setView(nextRoute.view);
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [defaultLessonId]);
+
+  const goHome = () => {
+    setView('home');
+    writeMathHash('home');
+  };
+
+  const goLesson = (lessonId: number) => {
+    setSelectedLessonId(lessonId);
+    setView('detail');
+    writeMathHash('detail', lessonId);
+  };
+
+  const goPractice = (lessonId: number) => {
+    setSelectedLessonId(lessonId);
+    setView('practice');
+    writeMathHash('practice', lessonId);
+  };
+
+  const goDashboard = () => {
+    if (typeof window !== 'undefined') {
+      window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#dashboard`);
+    }
+    onBackToDashboard();
+  };
 
   if ((view === 'detail' || view === 'practice') && selectedLesson) {
     const lessonIndex = lessons.findIndex((l) => l.id === selectedLesson.id);
@@ -38,7 +118,7 @@ export function MathHomePage({ onBackToDashboard }: MathHomePageProps) {
               <p className="mt-2 text-sm text-rose-700">Gói dùng thử chỉ mở 15 bài đầu tiên. Vui lòng nhập key để mở phần này.</p>
               <button
                 type="button"
-                onClick={() => setView('home')}
+                onClick={goHome}
                 className="mt-4 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm hover:bg-slate-50"
               >
                 <ArrowLeft className="h-4 w-4" />
@@ -56,11 +136,8 @@ export function MathHomePage({ onBackToDashboard }: MathHomePageProps) {
         <>
           <MathLessonDetailPage
             lesson={selectedLesson}
-            onBack={() => setView('home')}
-            onPractice={(lessonId) => {
-              setSelectedLessonId(lessonId);
-              setView('practice');
-            }}
+            onBack={goHome}
+            onPractice={goPractice}
           />
           <MascotChatWidget hideFloatingButton />
         </>
@@ -72,10 +149,7 @@ export function MathHomePage({ onBackToDashboard }: MathHomePageProps) {
         <>
           <MathPracticePage
             lesson={selectedLesson}
-            onBackToLesson={(lessonId) => {
-              setSelectedLessonId(lessonId);
-              setView('detail');
-            }}
+            onBackToLesson={goLesson}
           />
           <MascotChatWidget hideFloatingButton />
         </>
@@ -88,7 +162,7 @@ export function MathHomePage({ onBackToDashboard }: MathHomePageProps) {
       <section className="mx-auto w-full max-w-6xl min-w-0 px-4 py-8 sm:px-6 lg:px-8">
         <button
           type="button"
-          onClick={onBackToDashboard}
+          onClick={goDashboard}
           className="mb-5 inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-700 hover:bg-slate-50"
         >
           <ArrowLeft className="h-4 w-4" />
@@ -134,8 +208,7 @@ export function MathHomePage({ onBackToDashboard }: MathHomePageProps) {
                     toast.info('Gói dùng thử', 'Gói dùng thử chỉ mở 15 bài đầu tiên. Vui lòng nhập key để mở phần này.');
                     return;
                   }
-                  setSelectedLessonId(lessonId);
-                  setView('detail');
+                  goLesson(lessonId);
                 }}
               />
             )})}
