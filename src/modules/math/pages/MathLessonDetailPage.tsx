@@ -12,13 +12,23 @@ type MathLessonDetailPageProps = {
   onPractice: (lessonId: number) => void;
 };
 
+const dopiLessonFormat = [
+  'Trả lời theo đúng khung sau, ngắn gọn và dễ hiểu:',
+  '1. Hiểu nhanh: nêu ý chính trong 1 đến 2 câu.',
+  '2. Cách học: ghi 2 đến 4 bước rõ ràng.',
+  '3. Ví dụ nhỏ: đưa 1 ví dụ đơn giản.',
+  '4. Mẹo nhớ: 1 câu ngắn.',
+  '5. Tự kiểm tra: hỏi lại 1 câu nhỏ.',
+  'Không dùng bảng. Không lan man. Xưng là Dopi.',
+].join('\n');
+
 export function MathLessonDetailPage({ lesson, onBack, onPractice }: MathLessonDetailPageProps) {
   const cards = getMathLessonCards(lesson.id);
   const questions = getMathLessonQuestions(lesson.id);
 
   const openLessonAIExplanation = () => {
     openAIChatIntent({
-      prompt: `Giải thích bài học Toán lớp 6 "${lesson.title}" cho học sinh. Mục tiêu: ${lesson.objective}. Tóm tắt: ${lesson.summarySimple}. Mẹo học: ${lesson.tips}. Hãy giải thích dễ hiểu, ngắn gọn, có ví dụ nhỏ và mẹo nhớ nhanh.`,
+      prompt: `Dopi hãy giải thích bài học Toán lớp 6 này.\n\nTên bài: ${lesson.title}\nMục tiêu: ${lesson.objective}\nTóm tắt: ${lesson.summarySimple}\nMẹo học có sẵn: ${lesson.tips}\n\n${dopiLessonFormat}\n\nGiới hạn: tối đa 180 từ.`,
       autoSend: true,
     });
   };
