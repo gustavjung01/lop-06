@@ -24,11 +24,17 @@ function clamp(value: number, min = 0, max = 100) {
   return Math.max(min, Math.min(max, value));
 }
 
+function formatDopi(value: number | null) {
+  if (value === null) return '...';
+  return `${Math.max(0, Math.floor(value)).toLocaleString('vi-VN')} Dopi`;
+}
+
 function getStats(balance: number | null, transactions: AiCapacityTransaction[]) {
   const purchaseTotal = transactions.reduce((sum, txn) => (txn.amount > 0 ? sum + txn.amount : sum), 0);
   const usageTotal = transactions.reduce((sum, txn) => (txn.amount < 0 ? sum + Math.abs(txn.amount) : sum), 0);
+  const hasHistory = purchaseTotal > 0 || usageTotal > 0;
 
-  const total = purchaseTotal > 0 ? purchaseTotal : usageTotal > 0 ? balance ?? usageTotal : Math.max(balance ?? 0, 1);
+  const total = purchaseTotal > 0 ? purchaseTotal : hasHistory ? Math.max(usageTotal + (balance ?? 0), 1) : 100;
   const remainingPct = balance === null ? null : clamp((balance / Math.max(total, 1)) * 100);
 
   let tone: 'good' | 'warning' | 'critical' = 'good';
@@ -36,19 +42,12 @@ function getStats(balance: number | null, transactions: AiCapacityTransaction[])
   else if (balance <= 0 || (remainingPct ?? 0) <= 20) tone = 'critical';
   else if ((remainingPct ?? 0) <= 60) tone = 'warning';
 
-  const label =
-    balance === null
-      ? '...'
-      : balance <= 0
-        ? 'Hết'
-        : (remainingPct ?? 100) <= 20
-          ? 'Gần hết'
-          : (remainingPct ?? 100) <= 60
-            ? 'Sắp hết'
-            : 'Còn nhiều';
+  const label = formatDopi(balance);
 
   return { remainingPct, tone, label };
 }
+
+type PopupMode = 'redeem' | 'missing' | 'invalid' | 'empty' | 'ready';
 
 export function AiCapacityBar({
   showTooltip = true,
@@ -65,6 +64,7 @@ export function AiCapacityBar({
   const [error, setError] = useState<string | null>(null);
   const [linkedWalletLabel, setLinkedWalletLabel] = useState<string | null>(null);
   const [showPopup, setShowPopup] = useState(false);
+  const [forcedPopupMode, setForcedPopupMode] = useState<PopupMode | null>(null);
   const [redeemKey, setRedeemKey] = useState('');
   const [redeemLoading, setRedeemLoading] = useState(false);
   const [redeemMessage, setRedeemMessage] = useState<string | null>(null);
@@ -76,7 +76,7 @@ export function AiCapacityBar({
 
     const result = await getDopiAICapacity();
     if (result.ok) {
-      const nextBalance = result.balance;
+      const nextBalance = Number(result.balance || 0);
       const prevBalance = previousBalanceRef.current;
       setBalance(nextBalance);
       setTransactions(result.transactions || []);
@@ -90,6 +90,7 @@ export function AiCapacityBar({
 
       if (nextBalance === 0 && prevBalance !== null && prevBalance > 0) {
         onExhausted?.();
+        setForcedPopupMode('empty');
         setShowPopup(true);
       }
 
@@ -97,9 +98,11 @@ export function AiCapacityBar({
     } else {
       setError(result.error || 'Không thể lấy dung lượng');
       setLinkedWalletLabel(null);
+      setBalance(0);
+      setTransactions([]);
 
       if (String(result.error || '').toLowerCase().includes('het dung luong')) {
-        setBalance(0);
+        setForcedPopupMode('empty');
         setShowPopup(true);
       }
     }
@@ -117,9 +120,11 @@ export function AiCapacityBar({
       const result = await validateAndSaveDopiKey(key);
       if (result.ok) {
         setRedeemKey('');
-        setRedeemMessage(`Đã lưu Dopi key cho ví ${result.walletId || 'hiện tại'}.`);
+        setForcedPopupMode('ready');
+        setRedeemMessage(`Đã lưu Dopi key. Số dư hiện tại: ${formatDopi(Number(result.balance || 0))}.`);
         await fetchCapacity();
       } else {
+        setForcedPopupMode('invalid');
         setRedeemMessage(result.error || 'Không thể lưu Dopi key.');
       }
     } finally {
@@ -138,11 +143,17 @@ export function AiCapacityBar({
     }
   }, [onBuyMore, purchaseHref]);
 
+  const openRedeemPopup = useCallback(() => {
+    setForcedPopupMode('redeem');
+    setRedeemMessage(null);
+    setShowPopup(true);
+  }, []);
+
   useEffect(() => {
-    const handleOpenKeyPopup = () => setShowPopup(true);
+    const handleOpenKeyPopup = () => openRedeemPopup();
     window.addEventListener('hhk:dopi-key-popup-open', handleOpenKeyPopup);
     return () => window.removeEventListener('hhk:dopi-key-popup-open', handleOpenKeyPopup);
-  }, []);
+  }, [openRedeemPopup]);
 
   useEffect(() => {
     fetchCapacity();
@@ -166,31 +177,44 @@ export function AiCapacityBar({
 
   const storedDopiKey = getStoredDopiKey();
   const normalizedError = String(error || '').toLowerCase();
-  const popupMode = !storedDopiKey || normalizedError.includes('chua co dopi key')
+  const autoPopupMode: PopupMode = !storedDopiKey || normalizedError.includes('chua co dopi key')
     ? 'missing'
     : normalizedError.includes('khong hop le')
       ? 'invalid'
       : balance !== null && balance <= 0
         ? 'empty'
         : 'ready';
+  const popupMode = forcedPopupMode || autoPopupMode;
   const popupTitle =
-    popupMode === 'missing'
-      ? 'Chưa nhập Dopi key'
-      : popupMode === 'invalid'
-        ? 'Dopi key không hợp lệ'
-        : 'Dung lượng AI đã hết';
+    popupMode === 'redeem'
+      ? 'Nhập / nạp Dopi key'
+      : popupMode === 'missing'
+        ? 'Chưa nhập Dopi key'
+        : popupMode === 'invalid'
+          ? 'Dopi key không hợp lệ'
+          : popupMode === 'ready'
+            ? 'Dopi key đã sẵn sàng'
+            : 'Dung lượng AI đã hết';
   const popupSubtitle =
-    popupMode === 'missing'
-      ? 'Nhập Dopi key để lưu và dùng ở mọi app.'
-      : popupMode === 'invalid'
-        ? 'Hãy kiểm tra lại Dopi key đã nhập.'
-        : 'Bạn cần nạp thêm để tiếp tục chat';
+    popupMode === 'redeem'
+      ? 'Dán Dopi key mới để liên kết ví hoặc nạp thêm dung lượng.'
+      : popupMode === 'missing'
+        ? 'Nhập Dopi key để lưu và dùng ở mọi app.'
+        : popupMode === 'invalid'
+          ? 'Hãy kiểm tra lại Dopi key đã nhập.'
+          : popupMode === 'ready'
+            ? `Số dư hiện tại: ${formatDopi(balance)}`
+            : 'Bạn cần nạp thêm để tiếp tục chat';
   const popupMessage =
-    popupMode === 'missing'
-      ? 'Bạn chưa lưu Dopi key nên hệ thống chưa có ví AI để trừ dung lượng.'
-      : popupMode === 'invalid'
-        ? 'Mã Dopi không khớp hoặc đã bị vô hiệu hóa.'
-        : 'Dung lượng AI đã hết, hãy nạp thêm để tiếp tục dùng AI.';
+    popupMode === 'redeem'
+      ? 'Khu này chỉ dùng để nhập Dopi key. Nếu cần mua thêm key, bấm Mua thêm bên dưới.'
+      : popupMode === 'missing'
+        ? 'Bạn chưa lưu Dopi key nên hệ thống chưa có ví AI để trừ dung lượng.'
+        : popupMode === 'invalid'
+          ? 'Mã Dopi không khớp hoặc đã bị vô hiệu hóa.'
+          : popupMode === 'ready'
+            ? 'Dopi đã liên kết. Bạn có thể đóng cửa sổ này và tiếp tục hỏi bài.'
+            : 'Dung lượng AI đã hết, hãy nạp thêm để tiếp tục dùng AI.';
 
   return (
     <>
@@ -202,8 +226,8 @@ export function AiCapacityBar({
           className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-semibold transition-all hover:-translate-y-0.5 hover:shadow-sm ${toneClass} ${showTooltip ? 'cursor-pointer' : 'cursor-default'} ${compact ? 'max-w-[220px]' : 'max-w-[280px]'}`}
         >
           <Sparkles className="h-3.5 w-3.5 shrink-0" />
-          <span className="hidden sm:inline">Dung lượng AI</span>
-          <span className="sm:hidden">AI</span>
+          <span className="hidden sm:inline">Dopi</span>
+          <span className="sm:hidden">Dopi</span>
 
           <span className="inline-flex h-2 w-16 overflow-hidden rounded-full bg-white/70">
             <span
@@ -212,15 +236,15 @@ export function AiCapacityBar({
             />
           </span>
 
-          <span className="min-w-[42px] text-right">{loading ? '...' : stats.label}</span>
+          <span className="min-w-[72px] text-right tabular-nums">{loading ? '...' : stats.label}</span>
           {loading && <span className="ml-0.5 inline-block h-3 w-3 animate-spin rounded-full border-2 border-current border-t-transparent" />}
         </button>
         <button
           type="button"
-          onClick={() => setShowPopup(true)}
+          onClick={openRedeemPopup}
           className="inline-flex items-center gap-2 rounded-full border border-sky-300 bg-white px-3 py-1.5 text-xs font-semibold text-sky-700 transition hover:bg-sky-50"
         >
-          Nhập Dopi AI key
+          Nạp Dopi
         </button>
       </div>
 
@@ -231,7 +255,7 @@ export function AiCapacityBar({
               <div className="flex items-center gap-3">
                 <div
                   className={`flex h-12 w-12 items-center justify-center rounded-full ${
-                    popupMode === 'missing'
+                    popupMode === 'missing' || popupMode === 'redeem' || popupMode === 'ready'
                       ? 'bg-sky-100'
                       : popupMode === 'invalid'
                         ? 'bg-amber-100'
@@ -240,7 +264,7 @@ export function AiCapacityBar({
                 >
                   <AlertCircle
                     className={`h-6 w-6 ${
-                      popupMode === 'missing'
+                      popupMode === 'missing' || popupMode === 'redeem' || popupMode === 'ready'
                         ? 'text-sky-600'
                         : popupMode === 'invalid'
                           ? 'text-amber-600'
@@ -253,14 +277,14 @@ export function AiCapacityBar({
                   <p className="text-sm text-gray-500">{popupSubtitle}</p>
                 </div>
               </div>
-              <button onClick={() => setShowPopup(false)} className="p-1 text-gray-400 hover:text-gray-600">
+              <button type="button" onClick={() => setShowPopup(false)} className="p-1 text-gray-400 hover:text-gray-600">
                 <X className="h-5 w-5" />
               </button>
             </div>
 
             <div
               className={`mb-4 rounded-lg p-4 ${
-                popupMode === 'missing'
+                popupMode === 'missing' || popupMode === 'redeem' || popupMode === 'ready'
                   ? 'border border-sky-200 bg-sky-50'
                   : popupMode === 'invalid'
                     ? 'border border-amber-200 bg-amber-50'
@@ -269,14 +293,14 @@ export function AiCapacityBar({
             >
               <p
                 className={`text-sm leading-relaxed ${
-                  popupMode === 'missing'
+                  popupMode === 'missing' || popupMode === 'redeem' || popupMode === 'ready'
                     ? 'text-sky-800'
                     : popupMode === 'invalid'
                       ? 'text-amber-800'
                       : 'text-rose-800'
                 }`}
               >
-                <strong>{popupMode === 'missing' ? 'Bạn ơi!' : popupMode === 'invalid' ? 'Mã Dopi!' : 'Dung lượng!'}</strong>{' '}
+                <strong>{popupMode === 'invalid' ? 'Mã Dopi!' : popupMode === 'empty' ? 'Dung lượng!' : 'Dopi!'}</strong>{' '}
                 {popupMessage}
               </p>
             </div>
@@ -297,6 +321,7 @@ export function AiCapacityBar({
                   className="min-w-0 flex-1 rounded-xl border border-sky-200 bg-white px-3 py-2 text-sm font-mono text-slate-800 outline-none focus:border-sky-400"
                 />
                 <button
+                  type="button"
                   onClick={handleRedeem}
                   disabled={redeemLoading || !redeemKey.trim()}
                   className="rounded-xl bg-sky-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-sky-700 disabled:opacity-60"
@@ -309,10 +334,11 @@ export function AiCapacityBar({
 
             <div className="flex gap-3">
               <button
+                type="button"
                 onClick={() => setShowPopup(false)}
                 className="flex-1 rounded-xl bg-gray-100 px-4 py-2.5 text-sm font-medium text-gray-700 transition hover:bg-gray-200"
               >
-                Để sau
+                Đóng
               </button>
               <button
                 onClick={handleBuyMore}
